@@ -1,0 +1,16 @@
+rule_id,dimensi,level,aturan,tahap,diperiksa_sebelum,gagal_sebelum,pass_rate_sebelum,diperiksa_sesudah,gagal_sesudah,pass_rate_sesudah
+R01,Validitas,transaksi,Tahun pembuatan di antara 1950 dan tahun penjualan,sebelum,401125,38349,0.9043963851667186,368012,2,0.9999945653946067
+R02,Validitas,transaksi,Hour meter 1–100.000 jam dan ≤ 8.760 jam per tahun umur,sebelum,142765,73601,0.4844604770076699,67814,1,0.9999852537824048
+R03,Konsistensi,pasangan transaksi,Hour meter tidak turun untuk mesin yang sama,sebelum,4643,1421,0.6939478785268145,2527,0,1.0
+R04,Konsistensi,model,Satu ModelID → satu deskripsi model,sebelum,5218,0,1.0,5119,0,1.0
+R05,Keunikan,model,Satu model fisik (deskripsi + kelas) → satu ModelID,sebelum,5140,77,0.9850194552529183,5119,0,1.0
+R06,Konsistensi,mesin,Satu mesin → satu model,sebelum,341027,7329,0.9785090330091166,347399,0,1.0
+R07,Konsistensi,mesin,Satu mesin → satu tahun pembuatan,sebelum,311380,5837,0.9812544158263216,316108,0,1.0
+R08,Keunikan,mesin,Satu ID mesin → satu alat fisik (grup & base model sama),sebelum,341027,3984,0.9883176405387257,347399,0,1.0
+R09,Validitas,sel teks,"Tidak ada korupsi Excel (#NAME?, notasi ilmiah)",sebelum,793886,613,0.9992278488347194,794805,0,1.0
+R10,Validitas,sel,"Atribut berformat standar (Enclosure, ban, track, stick, blade)",sebelum,505732,12949,0.974395529648114,505732,0,1.0
+R11,Konsistensi,transaksi,Deskripsi model = gabungan komponennya,sebelum,401125,3703,0.9907684636958554,401125,3093,0.9922891866625116
+R12,Konsistensi,transaksi,Grup produk sesuai kelas produk,sebelum,401125,0,1.0,401125,0,1.0
+R13,Kelengkapan,sel,Atribut spesifikasi yang berlaku bernilai diketahui,sebelum,3313604,1435859,0.5666775510893879,3313604,1435859,0.5666775510893879
+R14,Kelengkapan,mesin,Tahun pembuatan valid diketahui,sebelum,341027,29657,0.9130362112090832,347399,31291,0.9099277775698836
+R15,Keunikan,transaksi,SalesID unik,sebelum,401125,0,1.0,401125,0,1.0

@@ -1,0 +1,6 @@
+# dataset Kaggle (unduh sendiri, lihat data/README.md)
+data/*.csv
+# database hasil notebook (±200 MB, dibangun ulang saat notebook dijalankan)
+outputs/*.db
+.ipynb_checkpoints/
+__pycache__/
